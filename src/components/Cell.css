@@ -1,0 +1,32 @@
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell.open {
+  background-color: white;
+}
+
+.shape {
+  width: 60%;
+  height: 60%;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.square {
+  border-radius: 0;
+}
+
+.triangle {
+  -webkit-clip-path: polygon(50% 12%, 14% 67%, 88% 67%);
+  clip-path: polygon(50% 12%, 14% 67%, 88% 67%);
+}
